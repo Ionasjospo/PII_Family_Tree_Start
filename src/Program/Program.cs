@@ -7,24 +7,38 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            Node n1 = new Node(1);
-            Node n2 = new Node(2);
-            Node n3 = new Node(3);
-            Node n4 = new Node(4);
-            Node n5 = new Node(5);
-            Node n6 = new Node(6);
-            Node n7 = new Node(7);
+            Node Pablo = new Node(74, "Pablo");
+            Node Esteban = new Node(56, "Estebitan");
+            Node Sebastian = new Node(45, "Seba");
+            Node Juan = new Node(32, "Juancito");
+            Node Paula = new Node(30, "Paulita");
+            Node Flavio = new Node(26, "Flavio");
+            Node Matias = new Node(24, "Matias");
 
-            n1.AddChildren(n2);
-            n1.AddChildren(n3);
+            Pablo.AddChildren(Esteban);
+            Pablo.AddChildren(Sebastian);
 
-            n2.AddChildren(n4);
-            n2.AddChildren(n5);
+            Esteban.AddChildren(Juan);
+            Esteban.AddChildren(Paula);
 
-            n3.AddChildren(n6);
-            n3.AddChildren(n7);
+            Sebastian.AddChildren(Flavio);
+            Sebastian.AddChildren(Matias);
 
             // visitar el árbol aquí
+
+            
+
+            Person Ionas = new Person(19, "Ionas Josponis");
+            Person Patricio = new Person(1, "Patricio Josponis");
+            Person Patricia = new Person(5, "Patricia Josponis");
+
+
+            Ionas.AddChildren(Patricia);
+            Ionas.AddChildren(Patricio);
+            
+
+
+
         }
     }
 }
