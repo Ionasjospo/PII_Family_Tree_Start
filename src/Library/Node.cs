@@ -10,7 +10,7 @@ namespace Library
 
         private List<Node> children = new List<Node>();
 
-        public Person Number 
+        public Person Person 
         {
             get
             {
@@ -35,6 +35,9 @@ namespace Library
         {
             this.children.Add(n);
         }
-        
+        public void Accept(Visitor visitor)
+        {
+            visitor.Visit(this);
+        }
     }
 }

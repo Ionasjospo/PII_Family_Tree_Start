@@ -48,8 +48,10 @@ namespace Program
             Paul.AddChildren(Juan);
             Paul.AddChildren(Juanjo);
 
+            Visitor visitor = new Visitor();
+            visitor.Visit(Ionas); 
 
-
+            Console.WriteLine(visitor.totalEdad);
 
         }
     }
