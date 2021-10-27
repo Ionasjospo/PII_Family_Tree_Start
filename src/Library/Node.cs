@@ -29,6 +29,7 @@ namespace Library
         {
             Person person = new Person(edad, nombre, apellido);
             this.persona = person;
+            
         }
 
         public void AddChildren(Node n)

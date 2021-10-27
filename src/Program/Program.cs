@@ -29,7 +29,7 @@ namespace Program
             
 
             Node Ionas = new Node(67, "Ionas", "Josponis");
-            Node Patricio = new Node(45, "Patricio", "Josponis");
+            Node Patricio = new Node(40, "Patricio", "Josponis");
             Node Paul = new Node(40, "Paul", "Josponis");
             Node Pedro = new Node(5, "Pedro", "Josponis");
             Node Pancracio = new Node(3, "Pancracio", "Josponis");
@@ -51,7 +51,14 @@ namespace Program
             Visitor visitor = new Visitor();
             visitor.Visit(Ionas); 
 
+            Visitor visitor2 = new Visitor();
+            visitor2.VisitCantLetras(Ionas); 
+
+            Visitor visitor3 = new Visitor();
+            visitor3.VisitHijoMayor(Ionas); 
+
             Console.WriteLine(visitor.totalEdad);
+            Console.WriteLine(visitor.nombreMasLargo);
 
         }
     }
